@@ -1,0 +1,26 @@
+[
+        {
+                "name": "Shooting Stars",
+                "artist": "Prilly, Selva ",
+                "url": "/medias/shootingstars.mp3",
+                "cover": "/medias/shootingstars.jpg"
+        },
+        {
+                "name": "The Storm",
+                "artist": "TheFatRat & Maisy Kay",
+                "url": "/medias/thestorm.mp3",
+                "cover": "/medias/thestorm.jpg"
+        },
+        {
+                "name": "Bombay Dreams",
+                "artist": "KSHMR & Lost Stories",
+                "url": "/medias/bombaydreams.mp3",
+                "cover": "/medias/bombaydreams.jpg"
+        },
+        {
+                "name": "In Your Eyes",
+                "artist": "Robin Schulz feat. Alida",
+                "url": "/medias/inyoureyes.mp3",
+                "cover": "/medias/inyoureyes.jpg"
+        }
+]
