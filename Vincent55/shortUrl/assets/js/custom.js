@@ -22,7 +22,6 @@ function fetch_from_server() {
 }
 
 function show_data(data) {
-    // document.getElementById('#urlModalInner').innerHTML = data;
     $("#urlModalInner").html(data);
     console.log(data);
     $("#urlModal").modal('show');
@@ -31,3 +30,15 @@ function show_data(data) {
 function refresh_main_page() {
     location.reload();
 }
+
+$(document).ready(function () {
+    $('#urlTable tbody tr').each(function () {
+        var full_url = $(this).children("td:nth-child(1)").children("a").text().replace(/\s/g, '');;
+        var hide_url = full_url;
+        console.log(full_url.length);
+        if (full_url.length > 39) {
+            hide_url = full_url.substr(0, 37) + "...";
+        }
+        $(this).children("td:nth-child(1)").children("a").text(hide_url);
+    });
+});
