@@ -37,6 +37,18 @@ function show_data(data) {
     $("#urlModalInner").html(data);
     $(".preloader").fadeOut(100);
     $("#urlModal").modal('show');
+    $("#urlButton").click(function () {
+        if (copyToClipboard($("#urlButton").attr("urlAttr"))) {
+            $("#urlButton").text("複製成功！");
+            $("#urlButton").removeClass("btn-secondary")
+                .addClass("btn-success");
+        } else {
+            $("#urlButton").text("複製失敗 :(");
+            $("#urlButton").removeClass("btn-secondary")
+                .addClass("btn-danger");
+            console.error("Async: Could not copy text: ", err);
+        }
+    });
 }
 
 function refresh_main_page() {
@@ -55,19 +67,6 @@ $(document).ready(function () {
     $(".preloader").fadeOut(100);
 });
 
-
-$("#urlButton").click(function () {
-    if (copyToClipboard($("#urlButton").attr("urlAttr"))) {
-        $("#urlButton").text("複製成功！");
-        $("#urlButton").removeClass("btn-secondary")
-            .addClass("btn-success");
-    } else {
-        $("#urlButton").text("複製失敗 :(");
-        $("#urlButton").removeClass("btn-secondary")
-            .addClass("btn-danger");
-        console.error("Async: Could not copy text: ", err);
-    }
-});
 
 function copyToClipboard(copy_text) {
     var textarea = document.createElement("textarea");
@@ -95,7 +94,7 @@ function show_error_input($selector, error_message, original_message) {
         .attr("placeholder", error_message).addClass("red_input_placeholder");
     $selector.children("input, textarea").focus(function () {
         $selector.removeClass("has-danger");
-        $selector.children("input,textarea").attr("placeholder", original_message);
+        $selector.children("input,textarea").attr("placeholder", original_message).removeClass("red_input_placeholder");
     });
 }
 
