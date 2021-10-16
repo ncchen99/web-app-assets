@@ -3,9 +3,8 @@ $("#urlForm").submit(function () {
 });
 
 function fetch_from_server() {
-    console.log("AAAA");
     $.ajax({
-        url: 'http://127.0.0.1:8080/http://st.vincent55.tw/web',// 跳轉到 action 
+        url: '/web',// 跳轉到  web
         data: {
             url: $("#url").val()
         },
