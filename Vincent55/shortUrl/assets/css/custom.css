@@ -363,3 +363,8 @@
         transform: rotate(-130deg);
     }
 }
+
+
+.red_input_placeholder::-webkit-input-placeholder {
+    color: #f44336;
+}
