@@ -3,6 +3,7 @@ $("#urlForm").submit(function () {
 });
 
 function fetch_from_server() {
+    $(".preloader").fadeIn(200);
     $.ajax({
         url: '/web',// 跳轉到  web
         data: {
@@ -23,7 +24,7 @@ function fetch_from_server() {
 
 function show_data(data) {
     $("#urlModalInner").html(data);
-    console.log(data);
+    $(".preloader").fadeOut(100);
     $("#urlModal").modal('show');
 }
 
