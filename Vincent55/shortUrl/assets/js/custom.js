@@ -18,6 +18,7 @@ function fetch_from_server() {
         error: function () {
             // view("異常！"); 
             alert("異常！");
+            $(".preloader").fadeOut(100);
         }
     });
 }
@@ -42,4 +43,5 @@ $(document).ready(function () {
         }
         $(this).children("td:nth-child(1)").children("a").text(hide_url);
     });
+    $(".preloader").fadeOut(100);
 });
