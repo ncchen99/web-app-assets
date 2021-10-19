@@ -19,7 +19,7 @@ function fetch_from_server() {
                 },
                 error: function () {
                     // view("異常！"); 
-                    alert("異常！");
+                    alert("粗事惹阿北😡");
                     $(".preloader").fadeOut(100);
                 }
             });
@@ -36,6 +36,7 @@ function fetch_from_server() {
 function show_data(data) {
     $("#urlModalInner").html(data);
     $(".preloader").fadeOut(100);
+    $("#okButton").css("display", "none");
     $("#urlModal").modal('show');
     $("#urlButton").click(function () {
         if (copyToClipboard($("#urlButton").attr("urlAttr"))) {
@@ -48,6 +49,7 @@ function show_data(data) {
                 .addClass("btn-danger");
             console.error("Async: Could not copy text: ", err);
         }
+        $("#okButton").css("display", "inline-block");
     });
 }
 
