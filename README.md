@@ -2,4 +2,4 @@
 
 [![](https://data.jsdelivr.com/v1/package/gh/ncchen99/web-app-assets/badge)](https://www.jsdelivr.com/package/gh/ncchen99/web-app-assets)
 
-好像醬子用個Releases可以拿到jsDelivr免費用🦄嘻嘻🐻
+好像醬子用個 Releases 可以拿到 jsDelivr 免費用🦄嘻嘻🐻

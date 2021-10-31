@@ -39,7 +39,7 @@ function show_data(data) {
     $("#okButton").css("display", "none");
     $("#urlModal").modal('show');
     $("#urlButton").click(function () {
-        if (copyToClipboard($("#urlButton").attr("urlAttr"))) {
+        if (copyToClipboard($("#urlButton").attr("urlAttr").trim())) {
             $("#urlButton").text("複製成功！");
             $("#urlButton").removeClass("btn-secondary")
                 .addClass("btn-success");
@@ -101,6 +101,6 @@ function show_error_input($selector, error_message, original_message) {
 }
 
 function validURL(str) {
-    var pattern = new RegExp(/(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/);
+    var pattern = new RegExp(/http[s]?:\/\/(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+/);
     return !!pattern.test(encodeURI(str));
 }
