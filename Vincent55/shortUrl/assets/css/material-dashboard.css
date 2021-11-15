@@ -18071,7 +18071,7 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 }
 
 .card-profile {
-    margin-top: 110px;
+    margin-top: 70px;
     text-align: center;
 }
 
@@ -19166,7 +19166,7 @@ Copyright (c) 2015 Daniel Eden
         left: auto;
         z-index: 1032;
         visibility: visible;
-        background-color: #9A9A9A;
+        background-color: #eee;
         overflow-y: visible;
         border-top: none;
         text-align: left;
@@ -19198,7 +19198,7 @@ Copyright (c) 2015 Daniel Eden
         height: 100%;
         width: 100%;
         position: absolute;
-        background-color: #282828;
+        background-color: #eee;
         display: block;
         content: "";
         z-index: 1;
