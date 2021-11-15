@@ -15165,6 +15165,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
     z-index: 2;
     width: 260px;
     background: #fff;
+    background-color: #eee;
     box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
@@ -15331,7 +15332,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
     line-height: 30px;
     width: 30px;
     text-align: center;
-    color: #a9afbb;
+    color: #6a6d72;
 }
 
 .sidebar .nav li a,
@@ -15370,6 +15371,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .sidebar .logo {
+    background-color: #eee;
     padding: 15px 0px;
     margin: 0;
     display: block;
@@ -18069,7 +18071,7 @@ html[dir="rtl"] .form-check .form-check-sign .check:before {
 }
 
 .card-profile {
-    margin-top: 70px;
+    margin-top: 110px;
     text-align: center;
 }
 
@@ -19033,6 +19035,7 @@ Copyright (c) 2015 Daniel Eden
     }
 
     .sidebar .sidebar-wrapper {
+        background-color: #eee;
         padding-bottom: 60px;
     }
 
